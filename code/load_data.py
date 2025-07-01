@@ -16,7 +16,7 @@ labels = []
 for label_idx, class_name in enumerate(classes):
     class_dir = os.path.join(dataset_path, class_name)
     if os.path.isdir(class_dir):
-        for img_name in os.listdir(class_dir)[:200]:  # Prendo max 200 immagini per classe
+        for img_name in os.listdir(class_dir)[:200]:
             img_path = os.path.join(class_dir, img_name)
             try:
                 img = Image.open(img_path).convert('L')
