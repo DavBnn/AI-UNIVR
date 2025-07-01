@@ -23,4 +23,7 @@ for label_idx, class_name in enumerate(classes):
                 images.append(np.array(img_resized))
                 labels.append(label_idx)
             except Exception as e:
-                print(f"Errore con immagine {img_path}: {e}")
+                print(
+    f"Errore con immagine {img_path}: {e}"
+)
+                

@@ -4,7 +4,7 @@ import torch.optim as optim
 from torch.utils.data import TensorDataset, DataLoader
 import numpy as np
 
-from load_data import images, labels, classes
+from load_data import images, labels
 
 
 from model import SimpleMLP
