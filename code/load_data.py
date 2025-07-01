@@ -2,6 +2,7 @@ import os
 from PIL import Image
 import numpy as np
 
+
 # Percorso della cartella dataset
 dataset_path = "./data/notMNIST_small/"
 
@@ -24,6 +25,5 @@ for label_idx, class_name in enumerate(classes):
                 labels.append(label_idx)
             except Exception as e:
                 print(
-    f"Errore con immagine {img_path}: {e}"
-)
-                
+                    f"Errore con immagine {img_path}: {e}"
+                )
