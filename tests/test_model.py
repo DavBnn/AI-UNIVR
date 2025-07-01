@@ -5,7 +5,6 @@ import os
 
 from model import SimpleMLP
 
-# Modifica del sys.path: questa è l'unica cosa che puoi scrivere prima degli import locali
 sys.path.append(
     os.path.abspath(
         os.path.join(os.path.dirname(__file__), '..', 'code')
