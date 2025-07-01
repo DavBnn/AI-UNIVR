@@ -2,18 +2,19 @@ import torch
 import sys
 import os
 
-# Configuro il path PRIMA di qualsiasi altra importazione locale
+
+from model import SimpleMLP
+
+# Modifica del sys.path: questa è l'unica cosa che puoi scrivere prima degli import locali
 sys.path.append(
     os.path.abspath(
         os.path.join(os.path.dirname(__file__), '..', 'code')
     )
 )
 
-from model import SimpleMLP  # Import dopo sys.path, ma ancora prima del codice
-
 
 def test_model_forward_pass():
     model = SimpleMLP()
     dummy_input = torch.randn(1, 1, 28, 28)  # Batch di 1 immagine 28x28
     output = model(dummy_input)
-    assert output.shape == (1, 10)  # Deve avere 10 output (uno per classe)
+    assert output.shape == (1, 10)  # Deve avere 10 output (una per classe)
