@@ -35,6 +35,8 @@ for epoch in range(n_epochs):
         loss.backward()
         optimizer.step()
         running_loss += loss.item()
-    print(f"Epoch {epoch+1}/{n_epochs} - Loss: {running_loss/len(dataloader):.4f}")
+    print(f"Epoch {epoch+1}/{n_epochs} – Loss: "
+      f"{running_loss/len(dataloader):.4f}")
+
 
 print("Training completato!")
