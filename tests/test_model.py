@@ -2,13 +2,14 @@ import torch
 import sys
 import os
 
+# Configuro il path PRIMA di qualsiasi altra importazione locale
 sys.path.append(
     os.path.abspath(
         os.path.join(os.path.dirname(__file__), '..', 'code')
     )
 )
 
-from model import SimpleMLP  # Import ora in posizione corretta
+from model import SimpleMLP  # Import dopo sys.path, ma ancora prima del codice
 
 
 def test_model_forward_pass():
