@@ -36,11 +36,12 @@ jobs:
         python3 code/train.py
         echo "Model saved as model.pt"
 
-    - name: Upload trained model as artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: trained-model
-        path: model.pt
+        - name: Upload trained model as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: trained-model
+          path: model.pt
+      
 
     - name: Docker Login
       uses: docker/login-action@v3
