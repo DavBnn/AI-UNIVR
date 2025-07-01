@@ -3,13 +3,9 @@ import sys
 import os
 
 
-from model import SimpleMLP
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'code')))  # noqa: E402
 
-sys.path.append(
-    os.path.abspath(
-        os.path.join(os.path.dirname(__file__), '..', 'code')
-    )
-)
+from model import SimpleMLP
 
 
 def test_model_forward_pass():
