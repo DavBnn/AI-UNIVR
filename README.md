@@ -16,25 +16,6 @@ Un test per controllare che il modello funzioni
 Un file Docker per eseguire il progetto
 Una pipeline automatica (CI/CD) che esegue i test ogni volta che faccio un push su GitHub
 
-**Come eseguire il progetto:**
-
-Installare le librerie:
-pip install -r requirements.txt
-
-Addestrare il modello:
-python3 code/train.py
-
-Lanciare i test:
-pytest
-
-Eseguire con Docker (se si vuole):
-docker build -t ai-univr-project .
-docker run ai-univr-project
-
-**Cosa fa la CI/CD:**
-
-Ogni volta che faccio un push su GitHub, parte in automatico un controllo che lancia i test.
-
 
 Davide Buin
 Università di Verona
