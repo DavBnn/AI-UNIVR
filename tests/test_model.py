@@ -12,7 +12,7 @@ sys.path.append(  # noqa: E402
     )
 )
 
-from model import SimpleMLP
+from model import SimpleMLP  # noqa: E402
 
 
 def test_model_forward_pass():
