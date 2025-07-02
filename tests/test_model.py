@@ -2,6 +2,8 @@ import sys
 import os
 import torch
 
+from model import SimpleMLP
+
 sys.path.append(
     os.path.abspath(
         os.path.join(
@@ -11,11 +13,6 @@ sys.path.append(
         )
     )
 )
-
-
-from model import SimpleMLP
-
-
 
 def test_model_forward_pass():
     model = SimpleMLP()
