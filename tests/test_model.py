@@ -14,6 +14,7 @@ sys.path.append(
     )
 )
 
+
 def test_model_forward_pass():
     model = SimpleMLP()
     dummy_input = torch.randn(1, 1, 28, 28)
