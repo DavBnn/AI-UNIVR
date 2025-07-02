@@ -1,5 +1,6 @@
 import sys
 import os
+import torch
 
 sys.path.append(
     os.path.abspath(
@@ -13,7 +14,7 @@ sys.path.append(
 
 
 from model import SimpleMLP
-import torch
+
 
 
 def test_model_forward_pass():
