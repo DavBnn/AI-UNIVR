@@ -2,9 +2,7 @@ import sys
 import os
 import torch
 
-from model import SimpleMLP
-
-sys.path.append(
+sys.path.append(  # noqa: E402
     os.path.abspath(
         os.path.join(
             os.path.dirname(__file__),
@@ -13,6 +11,8 @@ sys.path.append(
         )
     )
 )
+
+from model import SimpleMLP
 
 
 def test_model_forward_pass():
